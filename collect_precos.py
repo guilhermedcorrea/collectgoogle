@@ -46,7 +46,6 @@ options.add_argument('--disable-infobars')
 driver = webdriver.Chrome(options=options, executable_path=r"C:\\Users\\Guilherme\\Documents\\ecommercefllaskapp\\collectgoogle\\chromedriver\\chromedriver.exe")
 
 
-
 class Google:
     def __init__(self):
         self.dict = {}
