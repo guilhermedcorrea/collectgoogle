@@ -45,15 +45,6 @@ options.add_argument("--start-maximized")
 options.add_argument('--disable-infobars')
 driver = webdriver.Chrome(options=options, executable_path=r"C:\\Users\\Guilherme\\Documents\\ecommercefllaskapp\\collectgoogle\\chromedriver\\chromedriver.exe")
 
-def scroll() -> None:
-    driver.implicitly_wait(7)
-    lenOfPage = driver.execute_script("window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;")
-    match=False
-    while(match==False):
-        lastCount = lenOfPage
-        lenOfPage = driver.execute_script("window.scrollTo(0, document.body.scrollHeight);var lenOfPage=document.body.scrollHeight;return lenOfPage;")
-        if lastCount==lenOfPage:
-            match=True
 
 
 class Google:
